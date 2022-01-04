@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "text": "#Cluster Information",
+      "type": "text",
+      "id": "Field_1rru6ih"
+    },
+    {
+      "label": "Name",
+      "type": "textfield",
+      "id": "Field_1ej070x",
+      "key": "clusterName",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Channels",
+      "type": "textfield",
+      "id": "channel",
+      "key": "channel",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Channel UUID",
+      "type": "textfield",
+      "id": "Field_1bsco71",
+      "key": "channelId",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Generations",
+      "type": "textfield",
+      "id": "generation",
+      "key": "generation",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Generation UUID",
+      "type": "textfield",
+      "id": "Field_1ctkkn8",
+      "key": "generationId",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Plan Types",
+      "type": "textfield",
+      "id": "planType",
+      "key": "planType"
+    },
+    {
+      "label": "Plan Type UUID",
+      "type": "textfield",
+      "id": "Field_0gcbkkk",
+      "key": "planTypeId",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Regions",
+      "type": "textfield",
+      "id": "region",
+      "key": "region",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Region UUID",
+      "type": "textfield",
+      "id": "Field_15aoht3",
+      "key": "regionId",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Time To Live (in hours)",
+      "type": "number",
+      "id": "Field_134goor",
+      "key": "clusterTTL",
+      "validate": {
+        "required": true,
+        "min": 1
+      }
+    },
+    {
+      "text": "# Client Information",
+      "type": "text",
+      "id": "Field_01xufy5"
+    },
+    {
+      "label": "Name",
+      "type": "textfield",
+      "id": "Field_19ebr9u",
+      "key": "clientName",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "text": "# Demo data",
+      "type": "text",
+      "id": "Field_0t1lzvs"
+    },
+    {
+      "label": "Create",
+      "type": "checkbox",
+      "id": "Field_1ro59cp",
+      "key": "createDemoData"
+    },
+    {
+      "text": "Number of instances",
+      "type": "text",
+      "id": "Field_0k1lam2"
+    },
+    {
+      "label": "Red",
+      "type": "number",
+      "id": "Field_1ljjfsh",
+      "key": "red",
+      "validate": {
+        "min": 0
+      }
+    },
+    {
+      "label": "Yellow",
+      "type": "number",
+      "id": "Field_0q2sl8m",
+      "key": "yellow",
+      "validate": {
+        "min": 0
+      }
+    },
+    {
+      "label": "Green",
+      "type": "number",
+      "id": "Field_10k85b6",
+      "key": "green",
+      "validate": {
+        "min": 0
+      }
+    }
+  ],
+  "type": "default",
+  "id": "InsertRequirements"
+}

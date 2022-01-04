@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "text": "# Cluster management",
+      "type": "text",
+      "id": "Field_1gn4503"
+    },
+    {
+      "text": "# Info",
+      "type": "text",
+      "id": "Field_1mw0ka4"
+    },
+    {
+      "label": "Zeebe",
+      "type": "textfield",
+      "id": "Field_1dmrde2",
+      "key": "zeebeLink"
+    },
+    {
+      "label": "Operate",
+      "type": "textfield",
+      "id": "Field_1ek2jsy",
+      "key": "operateLink"
+    },
+    {
+      "label": "Tasklist",
+      "type": "textfield",
+      "id": "Field_0zqzb2e",
+      "key": "tasklistLink"
+    },
+    {
+      "text": "# Management",
+      "type": "text",
+      "id": "Field_1bs1al2"
+    },
+    {
+      "label": "Destroy",
+      "type": "checkbox",
+      "id": "Field_1qu9vsi",
+      "key": "destroyCluster"
+    },
+    {
+      "label": "Extend Time To Live (in hours)",
+      "type": "number",
+      "id": "Field_19gm04d",
+      "key": "clusterTTL",
+      "validate": {
+        "min": 1
+      }
+    }
+  ],
+  "type": "default",
+  "id": "DestroyExtendCluster"
+}

@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/CloudStarter
+    username: postgres
+    password: sa
+
+camunda.bpm:
+  admin-user:
+    id: <id>
+    password: <password>
+    firstName: <firstName>
+    lastName: <lastName>
+  filter:
+    create: All Tasks
+server.port: 9090
+
+zeebe:
+  client:
+    cloud:
+      clientId: <clientId>
+      clientSecret: <clientSecret>
+      oAuthAPI: https://login.cloud.camunda.io
+      zeebeAPI: https://api.cloud.camunda.io
+
+bpmm:
+  name: customer_onboarding_en.bpmn
+  processId: customer_onboarding_en
+
+demo:
+  client:
+    pomLocation: <path>
+    jarLocation: <path>
+    appFileLocation: <path>
+  dmn:
+    pomLocation: <path>
+    jarLocation: <path>
+    appFileLocation: <path>
+    dmn-repo: <path>
+  email:
+    pomLocation: <path>
+    jarLocation: <path>
+    appFileLocation: <path>
+  maven:
+    home: <path>
