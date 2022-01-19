@@ -69,7 +69,7 @@ public class CreateClusterDelegate implements JavaDelegate {
         while (true) {
             ci = restTemplate.exchange(zeebeAPI+"/clusters/"+resp.getBody().getClusterId(), HttpMethod.GET, entity, ClusterInfo.class);
 
-            if(!ci.getBody().getStatus().getReady().equals("Unhealthy"))
+            if(ci.getBody().getStatus().getReady().equals("Healthy"))
                 break;
 
             sleepTime = sleepTime + ProcessConstants.WAIT_TIME;
